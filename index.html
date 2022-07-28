@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+    <title>XU Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+<body>
+
+<!--FIXED CODE STARTS HERE-->
+
+
+
+    <div class="div-floater-btn">
+        <a href="facebook.com" class="quick-links">
+            <div>
+                <i class="fa-solid fa-link icon"></i>
+            </div>
+            <h3 class="h3-quicklinks-title">Quick Links</h3>
+        </a>
+    </div>
+<div class="div-page-header" id="div-header-all">
+    <div class="page-heading-section" id="header">
+        <header class="header-header-container">
+            <div class="div-header-time">
+                <div id="clock">
+                    <h1 id="date-time"></h1>
+                </div>
+            </div>
+            <div class="div-header-logo">
+                <div class="div-header-image"></div>
+                <a href="#">
+                    <img class="xu-icon" href="#" src="Images/Xavier.png" id="Xavier-logo" draggable="false">
+                </a>
+                
+            </div>
+            <div class="div-header-buttons">
+                
+                <div id="unauthenticated" class="div-header-buttons">
+                    <h3><a href="login.html">Sign in</a></h3>
+                </div>
+                <div id="authenticated" class="div-header-buttons">
+                    <h3><button id="logout">Logout</button></h3>
+                </div>
+            </div>
+        </header>
+        <section class="section-navbar-section">
+            <nav class="nav-navbar" id="navbar-class">
+                <div class="nav-logo">
+                    <a class="button-homes" href="index.html"><input type="image" src="Images/Icon XU Logo.png" href="facebook.com" class="btTxt submit icon" id="xu-logo" draggable="false"/></a>
+                </div>
+                <div class="div-nav-buttons">
+                    <ul class="ul-nav-links">
+                        <li onclick="location.href='#';" class="li-dropdown" id="li-dropwdown1">
+                            <a href="About/About/about.html" class="dropbtn">About</a>
+
+                        </li>
+                        <li onclick="location.href='#';" class="li-dropdown" id="li-dropwdown2">
+                            <a href="admissions.html" class="dropbtn">Admissions</a>
+                            
+                        </li>
+                        <li onclick="location.href='#';" class="li-dropdown" id="li-dropwdown3">
+                            <a href="Contact&AcademicPage/academics.html" class="dropbtn">Academics</a>
+                            
+                        </li>
+                        <li onclick="location.href='#';" class="li-dropdown" id="li-dropwdown4">
+                            <a href="About/About/news.html" class="dropbtn">News</a>
+                            
+                        </li>
+                        <li onclick="location.href='#';" class="li-dropdown" id="li-dropwdown5">
+                            <a href="Contact&AcademicPage/contact.html" class="dropbtn">Contact</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <form class="search-box">
+                        <input type="text" id="search-bar" name="search"><br>
+                        <a href="" class="search-button">
+                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                        </a>
+                    </form>
+                </div>
+                <div class="hamburger-menu">
+                    <a href="#" class="toggle-btn">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                </div>  
+            </nav>
+            <div class="bot-bar"></div>
+        </section>
+    </div>
+</div>
+
+
+
+<!--FIXED CODE ENDS HERE-->
+<div class="page-body">
+    <section class="home-contents">
+        <div class="carousel-section">
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/Carousel Photo.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/XU 1.PNG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/XU 2.PNG" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="shortcut-buttons">
+            <div class="shortcut-header">
+                <img class="xu-tagline" src="Images/Expe Excellence.png" alt="Experience Excellence">
+            </div>
+            <div class="group-shortcuts">
+                <div onclick="location.href='#';" class="shortcuts" id="shortcut-1" style="cursor: pointer;">
+                    <div class="icon-names">
+                        <img src="Images/Icon XU Logo.png" alt="">
+                        <h1>Xavier
+                        <br>Ateneo</h1>
+                    </div>
+                    <a href="#">SEE MORE</a>
+                </div>
+                <div onclick="location.href='#';" class="shortcuts" id="shortcut-2" style="cursor: pointer;">
+                    <div class="icon-names">
+                        <img src="Images/Icon Navigate.png" alt="">
+                        <h1>Apply
+                        <br>Now</h1>
+                    </div>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div onclick="location.href='#';" class="shortcuts" id="shortcut-3" style="cursor: pointer;">
+                    <div class="icon-names">
+                        <img src="Images/Icon Academics.png" alt="">
+                        <h1>Academics</h1>
+                    </div>
+                    <a href="#">LEARN MORE</a>
+                </div>
+                <div onclick="location.href='#';" class="shortcuts" id="shortcut-4" style="cursor: pointer;">
+                   
+                        <h1>Libraries</h1>
+                    </div>
+                    <a href="#">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="featured-event-section">
+            <div class="event-poster-frame">
+                <div class="portal-button">
+                    <img src="" ="">
+                    <a href="#"> </a>
+                </div>
+                <div class="event-frame">
+                    <img src="Images/Graduation Banner.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="ateneo-spotlight-section">
+            <div class="spotlight-frame">
+                <h1>Xavier Ateneo Spotlight</h1>
+                <div class="spotlight-cards">
+                    <div class="single-card" id="sl-card-1">
+                        <div class="card-pic">
+                            <img src="Images/Practicum Posters.png" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <a href="#">CCS Practicum 2022</a>
+                        </div>
+                    </div>
+                    <div class="single-card" id="sl-card-2">
+                        <div class="card-pic">
+                            <img src="Images/Spotlight Commencement.png" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <a href="#">83rd Commencement Exercises</a>
+                        </div>
+                    </div>
+                    <div class="single-card" id="sl-card-3">
+                        <div class="card-pic">
+                            <img src="Images/Spotlight XU Help Desk.png" alt="">
+                        </div>
+                        <div class="card-desc">
+                            <a href="#">XU Help Desk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-viewmore">
+                    <div class="spotlight-button">
+                    <a href="#">View More</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="ateneo-news-section">
+          <div class="news-frame">
+            <h1>UNIVERSITY NEWS</h1>
+            <div class="ateneo-newscards">
+                <div class="cards" style="width: 18rem;">
+                    <img src="Images/News Image 1.png" class="card-img-top" alt="...">
+                    <div class="cards-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+                  <div class="cards">
+                    <img src="Images/News Image 2.png" class="card-img-top" alt="...">
+                    <div class="cards-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p numberOfLines={1} class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+                  <div class="cards" style="width: 18rem;">
+                    <img src="Images/News Image 3.png" class="card-img-top" alt="...">
+                    <div class="cards-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+                  <div class="cards" style="width: 18rem;">
+                    <img src="Images/News Image 4.png" class="card-img-top" alt="...">
+                    <div class="cards-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+                  <div class="cards" style="width: 18rem;">
+                    <img src="Images/News Image 5.png" class="card-img-top" alt="...">
+                    <div class="cards-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="archived-news">
+                <div class="archived-button">
+                    <a href="#">Archived News</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bot-bar" id="presidents-bar">
+    
+        </div>  
+        
+        <div class="presidents-section">
+
+            <div class="pres-namebar">
+                <h1>The President</h1>
+            </div>
+            <div class="presidents-frame">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-thepresident-tab" data-bs-toggle="pill" data-bs-target="#pills-thepres" type="button" role="tab" aria-controls="pills-thepres" aria-selected="true">The President</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-messages-tab" data-bs-toggle="pill" data-bs-target="#pills-messages" type="button" role="tab" aria-controls="pills-messages" aria-selected="false">Messages</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link " id="pills-memos-tab" data-bs-toggle="pill" data-bs-target="#pills-memos" type="button" role="tab" aria-controls="pills-memos" aria-selected="false">Memos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" >Contact</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-thepres" role="tabpanel" aria-labelledby="pills-thepres-tab" tabindex="0">
+                        <div class="pres-container">
+                            <div class="pres-contain">
+                                <div class="pres-pic">
+                                    <div class="pres-picture">
+                                    <img src="Images/fr mars.png" alt="">
+                                    <h4>Fr. Mars P Tan SJ</h4>
+                                    <h6>15th University President</h6>
+                                    </div>
+                                </div>
+                                <div class="pres-desc1">
+                                    <div class="pres-desca">
+                                        <h5>Education</h5>
+                                            <p><b>PhD in Environmental Science</b> - University of Notre Dame Australia
+                                                Dissertation: Sedimentation dynamics of the Cagayan de Oro River Catchment and
+                                                its implications for its coastal marine environment. 2017</p>
+                                            <p><b>M.S. Environmental Science</b> - University of the Philippines, Diliman
+                                                Thesis: Seedling survival and growth responses of Enhalus acoroides (L.f.) Royle
+                                                using bamboo “pipes” under outdoor culture conditions.” 2006</p>
+                                            <p><b>Theology</b> - Loyola School of Theology, Ateneo de Manila University
+                                                Thesis: Halina’t Masdan si Hesus sa Ebanghelyo (translation work, 1999)</p>
+                                            <p><b>B.S. Biology</b>- Ateneo de Davao University, Davao City
+                                            <p><b>High School</b> - Saint Paul University (formerly San Nicolas College), Surigao City</p>
+                                    </div>
+                                    <div class="pres-descb">
+                                            <h5>Teaching/Research Work Experience</h5>
+                                            <p>Teacher/Jesuit Regent - Xavier University High School - 1992 -1994  </p>
+                                            <p>Research Assistant - Environmental Science for Social Change, AdMU - 2005 - 2007</p>
+                                            <p>Research Assistant - Institute of Social Order, AdMU – 2005 - 2007</p>
+                                            <p>Instructor and Assistant Professor – Biology Department of Xavier University – 2010 - 2020</p>
+                                            <p>Director – McKeough Marine Center, Xavier University – 2011 – 2020</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-messages" role="tabpanel" aria-labelledby="pills-messages-tab" tabindex="0">
+                        <div class="pres-container">
+                            <div class="pres-messages">
+                                <div class="prescard-container">
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Message at the University Service Awards 2022</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">09 February 2022</h6>
+                                          <p class="card-text">My dear Xavier Ateneo colleagues, family members of our awardees, students, alumni, friends and guests.</p>
+                                          <a href="#" class="card-link">Read</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Message to XUHS Silver and Golden Jubilarians (Dec 4, 2021)	</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">25 November 2021</h6>
+                                          <p class="card-text">My dear XUHS Alumni, I would like to welcome all of you to Xavier University – Ateneo de Cagayan, your alma mater, virtually and on-site.</p>
+                                          <a href="#" class="card-link">Read</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Message at the Charter Signing Ceremony of PEMSEA and Learning Centers (December 1, 2021)	</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">06 December 2021</h6>
+                                          <p class="card-text">Warm greetings from Mindanao, Philippines to all PEMSEA officers, Van Moneneth, headed by its president Dr Wansuk Senanan, PRF Executive Director, Ms Aimee Gonzales, all presidents</p>
+                                          <a href="#" class="card-link">Read</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Message to the Graduates of Agro-entrepreneurship for Inclusive Value Chains: An Introduction Course</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">25 November 2021</h6>
+                                          <p class="card-text">(Jollibee Group Foundation and Xavier University Partnership)
+
+                                            Good afternoon everyone!  Welcome to this graduation ceremony! Congratulations to the 97 graduates (94%) who completed the course on Agro-entrepreneurship for Inclusive Value Chains: An Introduction Course.</p>
+                                          <a href="#" class="card-link">Read</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Opening Remarks at E-Tukod Mindanao Congress (November 13, 2021)</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">17 November 2021</h6>
+                                          <p class="card-text">Good day, my dear student leaders of tertiary schools in our beloved city of Cagayan de Oro and those from other parts of Mindanao. </p>
+                                          <a href="#" class="card-link">Read</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="pills-memos" role="tabpanel" aria-labelledby="pills-memos-tab" tabindex="0">
+                        <div class="pres-container">
+                            <div class="memo-container">
+                                <div class="listof-memos">
+                                    <table class="pres-memos">
+                                        <tr>
+                                            <th class="title-head">Title</th>
+                                            <th class="date-head">Published Date</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-114 — XU Welcomes New SJs</a></td>
+                                            <td class="memo-date">22 July 2022</td>
+                                        </tr>    
+                                        <tr>                                            
+                                            <td class="memo-title"><a href="#">Memo #U2122-113 — (Re) Appointment of Social Development Administrators SY 2022-2023</a></td>
+                                            <td class="memo-date">20 July 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-112 — (Re) Appointment of Administrators of XUSHS SY 2022-2023</a></td>
+                                            <td class="memo-date">18 July 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-111 — Appointment of Administrators for Higher Education Cluster SY 2022-2023</a></td>
+                                            <td class="memo-date">15 July 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-110 — (Re) Appointment of Administrators for XUGS SY 2022-2023</a></td>
+                                            <td class="memo-date">15 July 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-109 — Ad Hoc Review Committee for Faculty Rank and Promotion Policies for Higher Education</a></td>
+                                            <td class="memo-date">14 July 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="memo-title"><a href="#">Memo #U2122-108 — 2022 University Honorary Doctorate Awardee and Commencement Speaker</a></td>
+                                            <td class="memo-date">13 July 2022</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="pres-container">
+                            <div class="pres-contact">
+                                <div class="section-title">
+                                    <h2>University President</h2>
+                                </div>
+                                <div class="contact-details">
+                                    <div class="details">
+                                        <h4>Contact</h4>
+                                        <p>President's Office, Xavier University-Ateneo De Cagayan, Philippines 9000</p>
+                                        <p><a href="#">op@xu.edu.ph</a></p>
+                                        <p>(088) 853-9800 Local 9000 or 9001</p>
+                                        <p>Official website:</p>
+                                        <p><a href="#">http://www.xu.edu.ph/university-president</a></p>
+                                    </div>
+                                    <div class="contact-form">
+                                        <div class="input1">
+                                            <label for="name" class="form-label">Name *</label>
+                                            <input class="form-control" type="text" placeholder="E.g. Juan dela Cruz" aria-label="name">
+                                        </div>
+                                        <div class="input2">
+                                            <label for="email" class="form-label">Email *</label>
+                                            <input class="form-control" type="text" placeholder="E.g. Juandelacruz@gmail.com" aria-label="email">
+                                        </div>
+                                        <div class="input3">
+                                            <label for="subject" class="form-label">Subject *</label>
+                                            <input class="form-control" type="text" placeholder="E.g. This is a testing" Default input" aria-label="subject">
+                                        </div>
+                                        <div class="input4">
+                                            <label for="message" class="form-label">Message*</label>
+                                            <textarea class="form-control" id="message-form" rows="3"></textarea>
+                                        </div>
+                                        <div class="submit-button">
+                                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="xu-webpage-footer">
+        <div class="xu-footer">
+            <div class="xu-details">
+                <p>© 2022 Xavier University - Ateneo de Cagayan<br>Corrales Avenue, Cagayan de Oro City, Philippines</p>
+            </div>
+            <div class="socmed-icons">
+                <img src="Images/yt icon.png" alt="">
+                <img src="Images/fb icon.png" alt="">
+                <img src="Images/tw icon.png" alt="">
+                <img src="Images/ig icon.png" alt="">
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://kit.fontawesome.com/c1eac03a05.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+
+<script>
+    /* Moralis init code */
+    const serverUrl = "https://4jgetuzkv01p.usemoralis.com:2053/server";
+    const appId = "wrhhVlUbwlUUdybWO8Ex75dwZQtwBCoSArAjqFuu";
+    Moralis.start({ serverUrl, appId });
+    const signin = document.getElementById('unauthenticated');
+    const notAuthenticated = document.getElementById('authenticated');
+    let user = Moralis.User.current();
+    if(user) {
+        signin.style.display = 'none';
+        notAuthenticated.style.display = 'block';
+    } else {
+        signin.style.display = 'block';
+        notAuthenticated.style.display = 'none';
+    }
+
+    async function LogoutUser () {
+        await Moralis.User.logOut();
+        window.location.reload();
+    }
+
+    document.getElementById("logout").onclick = LogoutUser;
+
+</script>
+</html>

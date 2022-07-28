@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XU Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="pages.css">
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <section class="login-page" id="login-whole">
+            <div class="login-frame">
+                <div class="login-window">
+                    <div class="login-logo">
+                        <img src="Images/Xavier.png" alt="Login XU">
+                    </div>
+                    <div class="login-form">
+                        <div class="mb-2">
+                            <label for="Username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="Username"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="UserPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="UserPassword">
+                        </div>
+                        <div class="mb-3 forgot-password">
+                            <a class="forget-pass" href="#">Forgot Password?</a>
+                        </div>
+                        <!--<div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>-->
+                        <!-- <p>Don't have an account? <a href="#!" class="link-info">Register here</a></p> -->
+                        <button id="btn-login" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <script src="https://kit.fontawesome.com/c1eac03a05.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="app.js"></script>
+</body>
+
+
+<script>
+   
+    /* Moralis init code */
+    const serverUrl = "https://4jgetuzkv01p.usemoralis.com:2053/server";
+    const appId = "wrhhVlUbwlUUdybWO8Ex75dwZQtwBCoSArAjqFuu";
+    Moralis.start({ serverUrl, appId });
+
+    /* Authentication code */
+    async function login() {
+        let username =  document.getElementById('Username').value
+        let password = document.getElementById('UserPassword').value
+        let user = Moralis.User.current();
+        if (!user) {
+            user = await Moralis.User.logIn(username, password)
+                .then(function (user) {
+                    window.location.href = "index.html";
+                })
+                .catch(function (error) {
+                    alert("Invalid User")
+                });
+        } else {
+            window.location.href = "index.html";
+        }
+    }
+
+    let user = Moralis.User.current();
+    if (user) {
+        window.location.href = "index.html";
+    }
+
+    document.getElementById("btn-login").onclick = login;
+
+    
+
+</script>
+
+</html>
